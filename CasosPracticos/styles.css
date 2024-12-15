@@ -1,0 +1,68 @@
+/* Caso 1: Alineación Compleja de la Card */
+.container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Hacer que ocupe toda la altura de la pantalla */
+  background-color: #f4f4f4;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Caso 2: Navbar Distribuida */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Elementos en los extremos con espacio entre ellos */
+  align-items: center; /* Alinear los elementos verticalmente */
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px; /* Espacio entre los enlaces */
+}
+
+.login-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Caso 3: Card Horizontal con Flexbox */
+.card-horizontal {
+  display: flex;
+  align-items: center; /* Alinear elementos verticalmente */
+  gap: 20px; /* Espacio entre la imagen y la descripción */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-description {
+  flex: 1; /* Hacer que la descripción ocupe el espacio disponible */
+}
+
+/* Diseño adaptable */
+@media (max-width: 600px) {
+  .card-horizontal {
+    flex-direction: column; /* Apila la imagen y la descripción en pantallas pequeñas */
+    align-items: flex-start; /* Alinear a la izquierda en modo columna */
+  }
+}

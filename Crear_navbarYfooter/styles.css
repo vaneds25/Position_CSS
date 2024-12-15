@@ -1,0 +1,46 @@
+/* CSS: Estilo Básico de la Navbar */
+.navbar {
+    background-color: #333; /* Fondo oscuro */
+    overflow: hidden; /* Evitar desbordamientos */
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: space-around; /* Distribuye uniformemente los elementos */
+    padding: 1em;
+  }
+  
+  .navbar a {
+    color: white; /* Enlaces en blanco para resaltar */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 0.5em 1em; /* Espaciado alrededor de los enlaces */
+  }
+  
+  .navbar a:hover {
+    background-color: #575757; /* Color de fondo al pasar el ratón */
+    transition: 0.3s; /* Transición suave */
+  }
+  
+  /* CSS: Footer de Cookies */
+  .cookie-footer {
+    position: fixed; /* Siempre visible al final */
+    bottom: 0; /* Pegado a la parte inferior */
+    left: 0;
+    right: 0;
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 1em;
+    display: flex; /* Organiza contenido de manera horizontal */
+    justify-content: space-between; /* Espacia el texto y el botón */
+    align-items: center;
+  }
+  
+  .cookie-footer button {
+    background-color: #4caf50; /* Verde para el botón */
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+  
+  .cookie-footer button:hover {
+    background-color: #45a049; /* Efecto hover */
+  }
+  
